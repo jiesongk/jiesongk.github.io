@@ -1,0 +1,38 @@
+---
+---
+
+
+<div class="text-justify">
+    {{reference}}
+</div>
+
+{% if entry.type %}
+<div>
+    <div>{{ entry.type }}</div>
+</div>
+{% endif %}
+
+
+{% if entry.note %}
+<div>
+    <div style="color:hotpink">{{ entry.note }}</div>
+</div>
+{% endif %}
+
+<div>
+    {% if entry.doi %}
+    <span><a href="{{ entry.doi | prepend: 'http://doi.org/' }}"><i class="fa fa-file-pdf-o" ></i></a></span>
+    {% endif %}
+</div>
+<div>
+    {% if entry.pdf %}
+    <span><a href="{{ entry.pdf }}" target="_blank"><i class="fa fa-file-pdf-o" ></i></a>
+</span>
+    {% endif %}
+</div>
+
+
+<script>$(".text-justify").each( function () {
+    var temp = $(this).html()
+    $(this).html(temp.replace(/&lt;br&gt;/g, "<br>"))
+})</script>

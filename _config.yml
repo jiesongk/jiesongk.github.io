@@ -27,3 +27,29 @@ author:              'Jie Song'
 # RSS 2.0 can be used instead of Atom by uncommenting following two lines
 #feed:
 #  path: rss-feed.xml
+
+# jekyll-scholar configuration
+scholar:
+  style: _bibliography/customized-jse.csl
+  locale: en
+
+  sort_by: year, month
+  order: descending
+
+  group_by: none
+  group_order: ascending
+
+  source: ./_bibliography
+  bibliography: references.bib
+  bibliography_template: bib
+
+  replace_strings: true
+  join_strings: false
+
+  use_raw_bibtex_entry: false
+
+  details_dir:    bibliography
+  details_layout: bibtex.html
+  details_link:   Details
+
+  query: "@*"

@@ -17,7 +17,7 @@ menu:
 social:
 - {icon: 'github', link: 'https://www.github.com/jiesongk'}
 # - {icon: 'twitter', link: 'https://twitter.com/paululele'}
-- {icon: 'linkedin', link: 'http://www.linkedin.com/in/jiesongk/'}
+- {icon: 'linkedin-square', link: 'http://www.linkedin.com/in/jiesongk/'}
 - {icon: 'envelope', link: 'mailto:jiesongk@umich.edu'}
 # - {icon: 'phone', link: 'tel:+1 734-546-4113'}
 - {icon: 'address-card', link: 'https://goo.gl/maps/Dedu1i1bCJG2'}
